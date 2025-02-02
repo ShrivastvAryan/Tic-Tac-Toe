@@ -1,13 +1,7 @@
-import{Playboxes} from "./boxes";
+import{Playboxes,ResetButton} from "./boxes";
 import React, { useEffect, useState } from "react";
 
 export const Mainpage=()=>{
-
-    const[reset,setReset]=useState(null);
-
-    const resetGame=()=>{
-        setReset("")
-    }
 
     return(
         <>
@@ -26,8 +20,7 @@ export const Mainpage=()=>{
             </div>
             
          </div>
-        <button className="mx-auto flex my-10 text-black font-bold font-sans bg-blue-300 p-2 border-rounded cursor-pointer 
-         caret-transparent rounded-xl transition-transform duration-400 hover:scale-110">Reset Game</button>
+        <ResetButton/>
          </div>
          
         </>
