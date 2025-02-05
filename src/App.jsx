@@ -1,7 +1,7 @@
-import { Mainpage } from "./mainpage"
+import TicTacToe from "./mainpage"
 
 export const App=()=>{
   return(
-    <Mainpage/>
+    <TicTacToe/>
   )
 }
